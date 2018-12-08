@@ -1,0 +1,44 @@
+Javascript: Regular Expressions
+
+RegExp.test(string) -> returns TRUE or FALSE
+string.match(string/regular expression) -> returns match
+
+To match multiple values: Use OR or |
+
+Flags
+Ignore Upper/Lower Cases: /___/i
+Find multiple instances of match(find more than the first match): /___/g
+Wildcard: /___./ -> matches any one character 
+Match repeating Characters (1 or more): /__+/
+Match repeating Characters (0 or more): /__*/
+Lazy matching: /___?/
+Match beginning: /^___/
+Match ending: /___$/
+Check for all or none: /__x?_/
+
+Character Classes /__[__]__/ -> Allow you to define a group of characters to match.
+Alphabet: [a-z]
+Alphabet & Numbers: [a-z0-9]
+Negated Character Set: /[^___]/ -> Character you don’t want to match
+
+Short Hand Character Classes
+/\w/: [A-Za-z0-9_]
+/\W/: [^A-Za-z0-9_]
+/\d/: [0-9]
+/\D/: [^0-9]
+/\s/: Whitespace [\r\t\f\n\v]
+/\S/: [^\r\t\f\n\v]
+
+Quantity Specifiers {_,_}
+Lower/Upper number: {_,}/{,_}
+Exact: {_}
+
+Lookahead 
+Positive lookahead:(?=…) where … is the required part that is not matched
+Negative lookahead:(?!…) where … is the pattern you do not want to be there
+
+Capture Groups: ( )
+
+
+
+
